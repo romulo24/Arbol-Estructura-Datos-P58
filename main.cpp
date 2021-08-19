@@ -1,6 +1,11 @@
-#include <iostream>// Libreria de entrada y de salida
-#include<stdlib.h>
-
+/*
+* Estrucrutra de Datos.
+* Autor: Estudiante Torres LLivipuma Romulo Jesus <rtorresll@est.ups.edu.ec>
+* Universidad Politecnica Salesiana
+* Fecha: 04-07-2021
+* Arbol
+*/
+#include <iostream>
 using namespace std;
 struct nodo{ //crear una estructura para generar un nodo
     int dato; //dato de entrada
