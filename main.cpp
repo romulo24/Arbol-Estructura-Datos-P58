@@ -14,8 +14,6 @@ struct nodo{ //crear una estructura para generar un nodo
 };
 typedef struct nodo *lista_doble; //Refenenciar y llamar de forma simpla lista
 
-
-
 void menu(){//metodo para generar un menu de funcionalidades
     cout << "\n\t\tDouble Linked List\n\n";
           cout << "1. Insert from Left" << endl;
@@ -26,9 +24,8 @@ void menu(){//metodo para generar un menu de funcionalidades
           cout << "6. Search by Right" << endl;
           cout << "7. Exit" << endl;
           cout << "\n Enter an option:";
-
-
 }
+
 void insertarizq(lista_doble &cabeza,lista_doble &ultimo,int valor){//Metodo inesertar por izquierda
     lista_doble nodo1;//creacion del nodo
     nodo1=new(struct nodo);//creacion de una estructura apartir del nodo anteriormente creado
@@ -48,6 +45,7 @@ void insertarizq(lista_doble &cabeza,lista_doble &ultimo,int valor){//Metodo ine
     }
 
 }
+
 void imprimirizq(lista_doble &cabeza){//Funcion para imprimir por izquierda
     lista_doble lista_imprimir;//apartir de la lista_doble  crea una lista para imprimir los valores
     lista_imprimir=cabeza; //lista_imprimir es igual a cabeza
@@ -81,6 +79,7 @@ void insertarder(lista_doble &cabeza,lista_doble &ultimo,int valor){//Metodo ine
         ultimo=nodo1;//ultimo es igual a nodo1
     }
 }
+
 void imprimirder(lista_doble &ultimo){//Funcion para imprimir por derecha
     lista_doble lista_imprimir;//apartir de la lista_doble  crea una lista para imprimir los valores
     lista_imprimir=ultimo;//lista_imprimir es igual a ultimo
@@ -118,6 +117,7 @@ void buscarder(lista_doble &ultimo,int valor){//Metodo para buscar ,recibe la li
         lista_buscar=lista_buscar->der;//lista_buscar recibe el valor buscado por referencia por derecha
     }
 }
+
 int main()
 
 {
